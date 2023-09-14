@@ -41,7 +41,7 @@ final class AlertController: AlertProtocol {
             preferredStyle: .alert
         )
         
-        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+        let saveAction = UIAlertAction(title: "Save Task", style: .default) { _ in
             guard let task = alertController.textFields?.first?.text else { return }
             guard !task.isEmpty else { return }
             completion(task)
